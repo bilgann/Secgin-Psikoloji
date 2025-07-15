@@ -1,0 +1,1722 @@
+/*Fonts*/
+@font-face {
+  font-family: "Ivy Presto Display";
+  src: url('assets/fonts/IvyPrestoDisplay-Light.otf') format('opentype');
+}
+@font-face {
+  font-family: "Clash Grotesk Variable";
+  src: url('assets/fonts/ClashGrotesk-Medium.otf') format('opentype');
+}
+@font-face {
+  font-family: "Clash Grotesk Variable";
+  src: url('assets/fonts/ClashGrotesk-Regular.otf') format('opentype');
+}
+
+/*Color of the highlight when a user highlights a block of text*/
+::selection {
+  background-color: #D9F0FF;
+  color: #162939; /* optional: change text color while selected */
+}
+
+
+
+.container {
+  width: 100%;
+  max-width: 100%;
+  margin: 0 auto;
+  background: #F8FBFF;
+  padding: 0 47px;
+}
+
+a {
+    text-decoration: none;
+}
+
+* {
+    box-sizing: border-box;
+    
+}
+
+button:hover,
+.cta-button:hover {
+  color: #f8fbff; /* or set to your default color */
+}
+
+
+
+body {
+    font-family: 'Clash Grotesk Variable', sans-serif;
+    color: #2d2d2d;
+    color: #3C3851;
+    line-height: 1.6;
+    background-color: #f8fbff;
+}
+
+
+html, body {
+  margin: 0;
+  padding: 0;
+  height: auto;
+  min-height: 100%;
+  overflow-x: hidden;
+}
+
+
+
+.whatsapp-button {
+  position: fixed;
+  bottom: 30px;
+  right: 30px;
+  cursor: pointer;
+  z-index: 1000;
+  width: 80px;
+  height: 80px;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+  border-radius: 50%;
+  transition: transform 0.2s ease;
+  background: none;
+}
+
+.whatsapp-button svg {
+  background: none;
+}
+
+
+.whatsapp-button:hover {
+  transform: scale(1.1);
+}
+
+
+.footer {
+  padding: 0;
+  position: static;
+  bottom: auto;
+  width: 100%;
+  margin-bottom: 0;
+  height: auto;
+}
+
+.footer-left {
+  background: none;
+  display: flex;
+  flex-direction: column;
+  gap: 1.5 rem;
+  flex: 1;
+}
+
+@media (max-width: 768px) {
+  .footer-svg-wrapper {
+    margin-top: 50px;
+    transform: translateX(50px);
+  }
+
+  
+  
+}
+
+.footer-svg-wrapper {
+    position: relative;
+    background: none;
+    pointer-events: none; 
+    bottom: 0;
+    flex-shrink: 0;
+    align-self: flex-start;
+    margin-left: auto;
+
+    svg {
+        display: flex;
+        width: clamp(350px, 40vw, 600px);
+        height: clamp(350px, 40vw, 550px);
+        object-fit: contain;
+        transform: translateY(-90px);
+        background: none;
+        margin-bottom: 0;
+    }
+}
+
+.footer .container {
+  background: #7899D4;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: flex-start;
+  gap: 2rem;
+}
+
+.footer-title {
+    background: none;
+    display: flex;                 /* ✅ Add this */
+    flex-direction: column;
+    align-items: flex-start;
+    width: 100%;
+}
+
+.footer-title h2 {
+    background: none;
+    color: #162939;
+    font-family: "IvyPresto Display Light";
+    font-size: 42px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    margin-top: 20px;
+    margin-bottom: 13px;
+}
+
+.footer-divider {
+    display: block;
+    height: 2px;
+    background: #162939;
+    margin-top: 0;
+    margin-bottom: 22px;
+    width: 85%;
+    margin-left: 0;
+}
+
+
+.footer-contact-row {
+    display: flex;
+    gap: 18px; /* space between contact titles and divider */
+    flex-wrap: wrap; /* allows responsiveness */
+    background: none;
+    width: 100%;
+}
+
+.footer-contact-group {
+    display: flex;
+    flex-direction: column;
+    gap: 5px;
+    background: none;
+    margin-right: 30px;
+}
+
+.footer-contact-title {
+
+        color: #162939;
+        font-family: "Clash Grotesk Variable";
+        font-size: 25px;
+        font-style: normal;
+        font-weight: 500;
+        line-height: normal;
+        background: none;
+
+}
+
+.footer-contact-details {
+    color: #E5EDFF;
+    font-family: "Clash Grotesk Variable";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: none;
+    width: 235px;
+    height: 108px;
+    flex-shrink: 0;
+    margin-bottom: 50px;
+}
+
+.footer-contact-details-phone {
+  color: #E5EDFF;
+    font-family: "Clash Grotesk Variable";
+    font-size: 25px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    background: none;
+}
+
+.social {
+    display: flex;
+    background: none;
+    margin-bottom: 13px;
+    margin-top: 40px;
+    
+    svg {
+        width: auto;
+        height: 28px;
+        display: block;
+        background: none;
+        margin-right: 27px;
+    }
+
+    a {
+        background: none;
+    }
+}
+
+.footer-note {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;             /* Optional: space between lines */
+  height: auto;
+  background: none;
+  padding-top: 10px;
+  padding-bottom: 0;
+  
+}
+
+.footer-note p {
+  background: none;
+  margin: 0; /* Optional: remove default spacing if needed */
+}
+
+/* Header */
+
+
+
+.main-header {
+  width: 100%; 
+  box-sizing: border-box;
+  background: none;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  margin-top: 20px;
+  margin-bottom: 10px;
+}
+
+.logo-container {
+    display: flex;
+    align-items: center;
+    gap: 12px;
+    padding-left: 12px;
+}
+
+.logo-icon {
+    padding: 0px 0px 0px 0px;
+}
+
+.logo-text {
+    display: flex;
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 36px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: 0.36px;
+    transform: translateY(-2px);
+}
+
+.nav-menu {
+    display: flex;
+    gap: 24px;
+    align-items: center;
+}
+
+.nav-menu a {
+  font-family: 'Clash Grotesk Variable', sans-serif;
+  font-size: 24px;
+  color: #3C3851;
+}
+
+/* Custom gradient button as image with text */
+.iletisim-custom-button {
+  position: relative;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 199px;
+  height: 54px;
+  background: none;
+  border: none;
+  padding-top: 10px;
+}
+
+.mobile-header {
+  display: none;
+}
+
+.header-divider.mobile-divider {
+  display: none;
+}
+
+
+
+/* only enable on mobile screens */
+@media (max-width: 768px) {
+
+  html, body {
+    font-size: 16px;            /* adjust root font for readability */
+    
+  }
+  img, iframe, .service-card img {
+    max-width: 100%;
+    height: auto;
+  }
+  /* Ensure no horizontal scroll: */
+  body {
+    overflow-x: hidden;
+    padding-top: 72px;
+  }
+
+  .container {
+    padding: 0 30px;
+  }
+
+  .whatsapp-button {
+    width: 48px;
+    height: 48px;
+    bottom: 16px;
+    right: 16px;
+  }
+
+  /* 1) Hide desktop header */
+  .main-header {
+    display: none;
+  }
+  
+  /* 2) Show mobile header */
+    /* Target the logo SVG inside .logo-link */
+  .mobile-header .logo-link svg {
+    width: auto;  /* increase width */
+    height: auto; /* increase height */
+  }
+
+  /* Increase font size of the logo text */
+  .mobile-header .logo-text {
+    font-size: 24px;  /* bigger font size */
+    line-height: 1.2;
+  }
+
+  /* Increase size of the İletişime Geç button SVG */
+  .mobile-header .mobile-header-iletisim svg {
+    width: auto;  /* bigger icon width */
+    height: auto; /* bigger icon height */
+  }
+
+  /* Optionally increase the button size for easier tapping */
+  .mobile-header .contact-btn {
+    width: auto; 
+  }
+  .mobile-header {
+  position: fixed;             /* fix it to top */
+  top: 0;                      /* stick to top of viewport */
+  left: 0;
+  right: 0;
+  z-index: 9999;               /* make sure it sits above everything */
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 12px;
+  padding-top: 20px;
+  background-color: #F8FBFF;
+  
+}
+
+.mobile-links {
+  display: inline-flex;
+  align-items: center;
+  gap: 8px; 
+  text-decoration: none;
+  color: inherit;
+}
+
+  .header-divider.desktop-divider {
+    display: none;
+    
+  }
+
+  .header-divider.mobile-divider {
+    display: block;
+    margin-top: 18px;
+  }
+  
+
+  .logo-container {
+    display: flex;
+    align-items: center;
+  }
+
+ 
+
+  /* 3) Force your exact logo & button size */
+  .logo-text {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light", serif;
+    font-size: 20px;        
+    font-weight: 300;
+    letter-spacing: 0.2px;
+    width: 148px;
+  height: 36px;
+  flex-shrink: 0;
+  }
+
+  .burger-btn {
+    color: #3C3851;;
+  }
+
+  .burger-btn,
+  .contact-btn {
+    background: none;
+    border: none;
+    font: inherit;
+    cursor: pointer;
+    
+  }
+
+  .iletisim-button svg{
+    width: 100px;
+  height: 28px;
+  flex-shrink: 0;
+  margin-right: 16px;
+  }
+
+  
+
+  /* 4) sliding menu panel */
+  .mobile-menu {
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    max-width: 100vw;
+    height: 100vh;
+    background: #F8FBFF;
+    transform: translateX(-100%);
+    transition: transform 0.5s ease;
+    z-index: 9;
+    padding: 40px 24px 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+
+ 
+  .mobile-menu.open {
+    transform: translateX(0);
+  }
+
+  .mobile-menu .menu-header {
+    display: flex;
+    align-items: center;
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 40px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.2px;
+    margin-bottom: 35px;
+  }
+
+.menu-header::after {
+  content: "";
+  flex-grow: 1;
+  height: 1px;
+  background-color: #3C3851;
+  margin-left: 16px;
+}
+
+.mobile-menu-bottom-svg {
+  max-width: 100%;
+  height: auto;
+  object-fit: contain;
+  justify-content: flex-end;
+  display: flex;
+  transform: translateY(50px);
+}
+
+  .mobile-menu ul {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 32px;
+}
+
+.mobile-menu li {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+}
+
+  .mobile-menu a {
+  color: #3C3851;
+  font-family: "Clash Grotesk Variable", sans-serif;
+  font-size: 28px;
+  font-weight: 500;
+  text-decoration: none;
+}
+
+.mobile-menu a:hover{
+  color: #3C3851;
+  }
+
+
+
+  .hero-text h1 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light", serif;
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin: 0; /* optional: removes extra top space */
+  }
+
+  .hero-text p {
+    color: #68647C;
+    font-family: "Clash Grotesk Variable", sans-serif;
+    font-size: 15.5px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 12px; /* optional: spacing under h1 */
+  }
+
+ 
+  .review-card {
+    display: flex;
+    width: auto;
+    height: auto;
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 18px;
+    flex-shrink: 0;
+  }
+
+  .review-content{
+    svg {
+      width: 29.041px;
+      height: 28.315px;
+      flex-shrink: 0;
+    }
+   p {
+    flex-shrink: 0;
+    align-self: stretch;
+    font-size: 16p;
+    height: 300px;
+  }
+  }
+
+  .contact-map {
+    width: 380px;
+height: 305px;
+flex-shrink: 0;
+  }
+
+  .google-map-wrapper {
+    width: 383px;
+    height: 600px; 
+    flex-shrink: 0;
+  }
+
+  .google-map-container {
+    width: 383px;
+    height: 600px; 
+    flex-shrink: 0;
+  }
+
+  .about-hero-text h1 {
+    padding-bottom: 20px;
+  }
+
+  
+}
+
+/* Line below header */
+.header-divider {
+    height: 1px;
+    background: #68647C;
+    margin: 0 auto 24px auto;
+    width: 100%;
+    max-width: 100%;
+}
+
+/* Hero Section */
+.hero {
+    display: flex;
+    align-items: flex-start;
+    gap: 48px;
+}
+
+.hero-image img {
+    width: 450px;
+    height: 550px;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+@media (max-width: 768px) {
+  .hero {
+    flex-direction: column;      /* stack image & text */
+    align-items: center;
+    gap: 24px;
+    padding: 0 16px;
+  }
+}
+
+.hero-text h1 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.hero-text p {
+    color: #68647C;
+    font-family: "Clash Grotesk Variable";
+    font-size: 27px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+
+
+
+/* Button */
+.cta-button {
+    display: inline-flex;
+    padding: 16px 32px;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+    border-radius: 38px;
+    background: #5187E8;
+    color: #F2F6FF;
+    font-family: "Clash Grotesk Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    align-self: flex-start;
+}
+
+/* --- Services Section --- */
+/* --- Section Header Line --- */
+.section-header {
+  display: flex;
+  align-items: center;  
+  justify-content: center;
+  gap: 16px;
+  margin-bottom: 16px;
+  background: none;
+    
+}
+
+.section-header h2 {
+    font-family: 'Ivy Presto Display', serif;
+    font-size: 48px;
+    color: #3C3851;
+    margin: 0;
+    line-height: 1;
+    background: none;
+}
+
+.header-line {
+    flex-grow: 1;              /* line expands to fill remaining space */
+    max-width: 100%;          /* adjust to taste */
+    height: 1px;
+    background: #68647C;
+    align-self: center;
+
+    transform: translateY(-10px);
+}
+
+.services {
+    margin-top: 100px;
+    background-color: #f9f9f9;
+}
+
+.services h2{
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+}
+
+/* --- Service Cards Container --- */
+.service-cards {
+  display: flex;
+  flex-direction: column;
+  gap: 33px;                 /* 33px between each card */
+  flex-wrap: wrap;
+  justify-content: center;
+}
+
+/* --- Individual Card --- */
+.service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  width: 100%;
+  aspect-ratio: 673 / 448; /* Keeps exact ratio without locking size */
+  max-width: 673px;
+}
+
+
+
+
+/* Main Grid Layout */
+.services-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(320px, 1fr));
+  gap: 33px;
+  justify-content: center;
+  padding: 0 16px;
+}
+
+/* If you only want bottom corners rounded: */
+/* .service-card { border-radius: 0 0 35px 35px; } */
+
+.service-card img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+}
+
+
+/* --- Gradient Overlay --- */
+.card-overlay {
+  position: absolute;
+  bottom: 0;
+  left: 0;
+  width: 100%;
+  padding: 24px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  border-radius: 0 0 35px 35px;
+  background: linear-gradient(
+    1deg,
+    rgba(60, 56, 81, 0.94) 41.05%,
+    rgba(135, 126, 183, 0) 79.67%
+  );
+}
+
+.page-link {
+  background: none;
+}
+
+/* Overlay Text */
+/* Ensure overlay text and button are transparent */
+.card-overlay {
+  display: grid;
+  grid-template-columns: 1fr auto;
+  align-items: end;        /* vertically align children to bottom */
+  padding: 28px;
+  gap: 24px;
+}
+
+
+.card-overlay h3 {
+    color: #F8FBFF;
+    font-family: "Clash Grotesk Variable";
+    font-size: 24px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.19px;
+    margin-bottom: 0;
+    background: none;
+}
+
+
+
+/*for the services template page*/
+.service-text-container p {
+  color: #3C3851;
+  font-family: "Clash Grotesk Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+  letter-spacing: -0.1px;
+  background-color: none;
+}
+
+.right-side h2 {
+  color: #3C3851;
+font-family: "IvyPresto Display Light";
+font-size: 45px;
+font-style: normal;
+font-weight: 300;
+line-height: normal;
+letter-spacing: -0.225px;
+}
+
+.service-page h2 {
+  color: #3C3851;
+
+  /* Sub Header */
+  font-family: "IvyPresto Display Light";
+  font-size: 48px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.24px;
+}
+
+
+
+
+/* Wrapper to center the button and add spacing */
+.all-services-wrapper {
+  display: flex;
+  margin-top: 35px;  /* space above the button */
+  margin-bottom: 100px;
+
+  svg {
+    background: none;
+    width: auto;
+    height: auto;
+  }
+}
+
+
+/* --- Responsive Tip --- */
+/* If you want cards side-by-side on larger screens: */
+@media(min-width: 768px) {
+  .service-cards {
+    flex-direction: row;
+  }
+  .service-card {
+    flex: 1;
+  }
+}
+
+/* Yorumlar Section */
+.reviews h2 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+    background: none;
+}
+
+.carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: 100%;
+}
+
+
+.carousel-container {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}
+
+.carousel-btn {
+  background: none;
+  border: none;
+  font-size: 32px;
+  color: #7272AB;
+  cursor: pointer;
+  padding: 10px;
+  user-select: none;
+}
+
+.carousel-slide {
+  display: flex;
+  gap: 20px;
+  overflow: hidden;
+  transition: all 0.3s ease;
+  flex: 1;
+  justify-content: center;
+}
+
+.review-card {
+  background: #D9F0FF;
+  border-radius: 35px;
+  padding: 30px 24px;
+  width: 100%;
+  max-width: calc(33.33% - 40px);
+  min-height: 280px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  box-sizing: border-box;
+}
+
+.review-card p {
+  font-size: 16px;
+  margin: 16px 0;
+  line-height: 1.6;
+  padding-bottom: 50px;
+}
+
+
+.review-card strong {
+  color: #3C3851;
+  font-family: "Clash Grotesk Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 500;
+  line-height: normal;
+}
+
+.review-card span {
+  font-weight: bold;
+  margin-top: auto;
+}
+
+.svg-wrapper {
+  margin-bottom: 12px;
+}
+
+.carousel-dots {
+  margin-top: 20px;
+  display: flex;
+  justify-content: center;
+  gap: 8px;
+}
+
+.dot {
+  width: 10px;
+  height: 10px;
+  border-radius: 50%;
+  background: #ccc;
+  cursor: pointer;
+}
+
+.dot.active {
+  background: #7899D4;
+}
+
+/* RESPONSIVE */
+@media (max-width: 768px) {
+  .carousel-slide {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .review-card {
+    max-width: 90%;
+  }
+}
+
+
+
+/*Contact Section*/
+.contact-content {
+    display: flex;
+    flex-direction: row;
+    align-items: flex-start;
+    justify-content: space-between;
+    gap: 48px;
+    background: none;
+}
+
+/*On small screens, stack vertically*/
+@media (max-width: 768px) {
+    .contact-content {
+        flex-direction: column;
+        gap: 24px;
+    }
+}
+
+@media (max-width: 768px) {
+  .contact-box {
+    width: 100%;
+    padding: 24px;
+    margin: 0 auto 70px;
+  }
+}
+
+
+.medium-text {
+    font-family: 'Clash Grotesk Variable', sans-serif;
+    font-weight: 500;
+}
+
+.contact h2 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+    background: none;
+}
+
+.contact-details-vertical {
+    flex: 1 1 350px;
+    display: flex;
+    flex-direction: column;
+    gap: 24px; 
+    background: none;         
+}
+
+.contact-item h3 {
+  color: #3C3851;
+    font-family: "Clash Grotesk Variable";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    margin-bottom: 8px;
+    background: none;
+}
+
+
+.contact-item p {
+  font-family: 'Clash Grotesk Variable', sans-serif;
+  font-size: 20px;
+  color: #68647C;
+  margin: 0;
+  background: none;
+}
+
+.contact-box .section-header h2 {
+  margin-bottom: 0;
+  
+}
+
+/* Align the “Randevu Al” button flush left */
+.contact-item .cta-button {
+  margin-top: 8px;
+}
+
+.randevu-wrapper {
+    display: flex;
+    margin-top: 30px;  /* space above the button */
+    margin-bottom: 200px;
+}
+
+.contact-map-container {
+    width: 100%;
+    height: auto;
+}
+
+.contact-map {
+    flex: 2 1 0;
+    display: flex;
+    justify-content: flex-end;
+    width: 100%;
+    height: 450px;
+}
+
+.contact-map iframe {
+    width: 100%;
+    max-width: 100%;
+    display: flex;
+    justify-content: flex-end;
+    border: none;
+    border-radius: 19px;
+    flex-shrink: 0;
+}
+
+
+
+.item-title {
+  display: flex;
+  align-items: center; /* vertically center icon and text */
+  gap: 12px; /* space between icon and text */
+}
+
+.item-title svg {
+  width: 24px;
+  flex-shrink: 0;
+  transform: translateY(2px); /* try positive or negative px values */
+}
+
+
+
+/* About Page */
+.about-hero-text h1 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 60px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.3px;
+    margin-top: 0;
+    margin-bottom: 0;
+}
+
+.about-hero-text p {
+    color: #68647C;
+    font-family: "Clash Grotesk Variable";
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 0;
+    margin-bottom: 30px;
+}
+
+.uzmanlik {
+    margin-top: 100px;
+    background-color: none;
+    margin-bottom: 300px;
+}
+
+.uzmanlik h2{
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+}
+
+.info-section {
+    display: flex;
+    justify-content: flex-start;
+    align-items: flex-start;
+    gap: 10px;
+    flex-wrap: wrap;
+    margin-bottom: 50px;
+}
+
+/*stacking vertically for smaller screens*/
+
+@media (max-width: 768px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  .contact-box {
+    width: 100%;
+    margin-bottom: 70px;
+  }
+}
+
+.contact-item .item-title svg {
+  margin-top: 0;
+  margin-bottom: 10px;
+}
+
+.contact-item .item-title h3 {
+  margin-top: 0;
+  margin-bottom: 0;
+}
+
+.contact-box {
+  display: flex;
+  flex-direction: column;
+  border-radius: 11px;
+  background: #E5EDFF;
+  padding: 32px;
+  border-radius: 16px;
+  flex-shrink: 0;
+  width: 500px; /* reduced from 458px */
+  height: auto;
+}
+
+.contact-box h2,
+.contact-box h3,
+.contact-box p,
+.contact-box svg,
+.contact-box div {
+  background: transparent !important;  /* remove any white bg forced elsewhere */
+  /* or use background: none; */
+}
+
+.contact-box .section-header {
+  display: block; /* or flex with justify-content: flex-start */
+  text-align: left;
+  margin-bottom: 25px;
+}
+
+.accordion-arrow {
+  transition: transform 0.5s ease;
+  margin-right: auto;
+  height: auto;
+  flex-shrink: 0;
+}
+
+.section-divider {
+  flex-grow: 1;
+  height: 1px;
+  background-color: #68647C;
+  max-width: 100%;
+  transform: translateY(-10px);
+}
+
+.accordion-item {
+    margin-bottom: 32px;
+    
+}
+
+.accordion-column {
+  flex: 1;
+}
+
+.accordion-header {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  cursor: pointer;
+  width: 75%;
+}
+
+.accordion-line {
+  flex-grow: 1;
+  height: 2px;
+  background: #68647C;
+  max-width: auto;
+  width: 100%;
+}
+
+.accordion-toggle {
+    background: none;
+    border: none;
+    color: #68647C;
+
+    /* Body */
+    font-family: "Clash Grotesk Variable";
+    font-size: 38px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.19px;
+
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    cursor: pointer;
+    padding: 0;
+    
+}
+
+.accordion-title {
+    flex-grow: 1;
+    color: #68647C;
+
+    /* Body */
+    font-family: "Clash Grotesk Variable";
+    font-size: 30px;
+    font-style: normal;
+    font-weight: 500;
+    line-height: normal;
+    letter-spacing: -0.19px;
+    width: 40%;
+}
+
+.accordion-content {
+    display: block;
+    width: 100%;
+}
+
+.accordion-item.active .accordion-content {
+  display: block;
+}
+
+/*Rotates arrow on open*/
+.accordion-item.active .accordion-arrow {
+  transform: rotate(180deg);
+}
+
+.accordion-content p {
+  color: #68647C;
+
+    /* Caption */
+    font-family: "Clash Grotesk Variable";
+    font-size: 20px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+    margin-top: 20px;
+    width: 60%;
+}
+
+.accordion-item.active .accordion-content {
+    display: block;
+}
+
+/*Reuse the existing cta button style but align it right*/
+.accordion-button .cta-button {
+    margin-top: 20px;
+    padding: 10px 20px; /* smaller size */
+    font-size: 18px;
+    float: none; /* disable float */
+    align-self: flex-end; /* align right in flex context */
+    margin-left: auto;
+    display: inline-block;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.accordion-button {
+  display: none;
+  
+}
+
+.accordion-item.active .accordion-button {
+  display: block;
+}
+
+
+@keyframes fadeIn {
+    from { opacity: 0; transform: translateY(-5px);}
+    to { opacity: 1; transform: translateY(0);}
+}
+
+.iletisim {
+    margin-top: 24px;
+    background-color: none;
+}
+
+.iletisim h2{
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+}
+
+
+
+.contact-page-details {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  gap: 32px;
+  text-align: center;
+  padding-left: 50px;
+  padding-right: 52.5px;
+  padding-bottom: 50px;
+
+  svg {
+    width: 95px;
+    height: 95px;
+  }
+
+  p {
+  max-width: 100%; /* Instead of fixed width */
+  height: 93px;
+  flex-shrink: 1; /* Allow shrinking */
+  font-size: 25px;
+  box-sizing: border-box;
+}
+}
+
+.contact-page-details .contact-item {
+  margin-bottom: 25px;
+}
+
+/* Responsive stacking on small screens */
+@media (max-width: 768px) {
+  .contact-page-details {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  .contact-page-details .contact-item {
+    width: 100%;
+    max-width: 400px;
+  }
+}
+
+
+.google-map-container {
+  width: 100%;
+  height: 100%;
+  flex-shrink: 0;
+  overflow: hidden;
+  border-radius: 12px; /* optional for rounded edges */
+  margin-bottom: 200px;
+  justify-content: center;
+    align-items: center;
+}
+
+@media (max-width: 768px) {
+  .google-map-wrapper {
+    margin-left: calc(-50vw + 50%); /* pulls the map full width */
+    margin-right: calc(-50vw + 50%);
+    width: 100vw;
+    padding-left: 24px;  /* your desired left padding */
+    padding-right: 24px; /* your desired right padding */
+    box-sizing: border-box; /* so padding is inside width */
+  }
+
+  .google-map-container iframe {
+    width: 100vw;
+    height: 350px;
+  }
+}
+
+.hizmetler h2 {
+  color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+}
+
+.services-grid{
+  display: grid;
+  grid-template-columns: repeat(2, minmax(0, 1fr)); /* Prevent overflow */
+  gap: 48px;
+  margin-bottom: 200px;
+}
+
+.services-grid .service-card {
+  position: relative;
+  overflow: hidden;
+  border-radius: 35px;
+  width: 100%;              /* ✅ Keep this */
+  max-width: 100%;          /* ✅ Prevent overshooting */
+  flex-shrink: 0;
+  transition: box-shadow 0.3s ease, transform 0.3s ease;
+
+  img {
+    width: 100%;
+  height: auto;
+  display: block;
+  }
+}
+
+@media (max-width: 600px) {
+  .services-grid {
+    display: grid;
+    grid-template-columns: 1fr; /* SINGLE COLUMN */
+    gap: 24px; /* optional smaller gap */
+    margin-bottom: 100px; /* optionally reduce margin */
+  }
+
+  .services-grid .service-card {
+    position: relative;
+    overflow: hidden;
+    border-radius: 35px;
+    width: 100%;
+    max-width: 100%;
+    flex-shrink: 0;
+    transition: box-shadow 0.3s ease, transform 0.3s ease;
+  }
+
+  .services-grid .service-card img {
+    width: 100%;
+    height: auto;
+    display: block;
+  }
+
+  .card-overlay {
+    width: 100%;
+    height: 100%;
+    background: linear-gradient(
+    1deg,
+    rgba(60, 56, 81, 0.94) 20.05%,
+    rgba(135, 126, 183, 0) 79.67%
+  );
+  }
+
+  .contact-box {
+    width: 100%;        /* full width of container */
+    max-width: 100%;    /* no overflow */
+    padding: 30px 30px 30px 30px; /* reduce padding for smaller screen */
+    box-sizing: border-box; /* include padding in width */
+  }
+}
+
+
+.service-card:hover {
+  box-shadow: 0 0 40px 10px #7899D4;
+  transform: translateY(-5px); /* optional hover lift */
+}
+
+
+
+.bireyselpsikoterapi h2 {
+    color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-top: 0;
+}
+
+.service-image img {
+    width: 100%;
+    height: 460px;
+    flex-shrink: 0;
+    border-radius: 20px;
+    object-fit: cover;
+}
+
+.service-layout {
+  display: flex;
+  gap: 40px;
+  align-items: flex-start;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+
+
+.service-text-container h3 {
+  color: #3C3851;
+  font-family: "IvyPresto Display Light";
+  font-size: 32px;
+  font-style: normal;
+  font-weight: 300;
+  line-height: normal;
+  letter-spacing: -0.16px;
+  margin-bottom: 0;
+}
+
+.service-text-container p {
+  color: #3C3851;
+  font-family: "Clash Grotesk Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.service-text-container ul {
+  color: #3C3851;
+  font-family: "Clash Grotesk Variable";
+  font-size: 20px;
+  font-style: normal;
+  font-weight: 400;
+  line-height: normal;
+  letter-spacing: -0.1px;
+}
+
+.left-side {
+  flex: 1 1 50%;
+  min-width: 0;
+  max-width: 60%;
+  display: flex;
+  flex-direction: column;
+  gap: 10px;
+  margin-bottom: 80px;
+}
+
+.right-side {
+  flex: 1 1 35%;
+  min-width: 350px;
+  max-width: 35%;
+  display: flex;
+  justify-content: flex-end;
+  margin-bottom: 50px;
+}
+
+@media screen and (max-width: 992px) {
+  .info-section {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    width: 100%;
+    min-width: auto;
+  }
+}
+
+@media (max-width: 768px) {
+  .service-layout {
+    flex-direction: column;
+  }
+
+  .left-side,
+  .right-side {
+    max-width: 100%;
+    flex-basis: 100%;
+    min-width: auto;
+  }
+
+  .right-side {
+    justify-content: flex-start; /* Align contact box to the left on small screens */
+    margin-top: 0;            /* spacing between left and right */
+  }
+}
+
+.gallery-section .carousel-wrapper {
+  position: relative;
+  display: flex;
+  align-items: center;
+  gap: 1rem;
+  max-width: 900px;
+  margin: 0 auto;
+  overflow: hidden;
+}
+
+.gallery-section .section-header h2 {
+  color: #3C3851;
+    font-family: "IvyPresto Display Light";
+    font-size: 48px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: normal;
+    letter-spacing: -0.24px;
+    margin-bottom: 33px;
+}
+
+.gallery-track {
+  display: flex;
+  overflow: hidden;
+  gap: 1rem;
+  width: 100%;
+  scroll-behavior: smooth;
+}
+
+.gallery-image {
+  transition: transform 0.5s ease, opacity 0.5s ease;
+  flex: 0 0 auto;
+  width: 100%;
+  object-fit: cover;
+  height: auto;
+  max-width: 100%;
+}
+
+.gallery-image img {
+  width: 100%;
+  height: auto;
+  max-height: 500px;
+  object-fit: cover;
+  border-radius: 8px;
+  transition: opacity 0.5s ease-in-out;
+}
+
+.carousel-btn {
+  background-color: #d9f0ff;
+  border: none;
+  border-radius: 50%;
+  width: 42px;
+  height: 42px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-shrink: 0;
+  transition: background-color 0.3s ease;
+}
+
+.gallery-section {
+  margin-bottom: 100px;
+}
