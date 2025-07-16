@@ -1,5 +1,5 @@
 import React from "react";
-import heroImage from "../assets/images/gurbeysecginpic.jpg"; // adjust path if needed
+import heroImage from "../assets/images/gurbeysecginpic.jpg";
 import ServiceBoxes from "../components/ServiceBoxes";
 import ReviewCarousel from "../components/ReviewCarousel";
 import ContactSection from "../components/ContactSection";

@@ -1,21 +1,25 @@
 import React from "react";
+import bireyselImg from "../assets/images/bireyselpsikoterapi.jpg";
+import ciftImg from "../assets/images/ciftterapi.jpg";
+import duygudurumImg from "../assets/images/duygudurumbozukluklari.jpg";
+
 
 const services = [
   {
     title: "Bireysel Psikoterapi",
-    image: "src/assets/images/bireyselpsikoterapi.jpg",
+    image: bireyselImg,
     alt: "Bireysel Psikoterapi",
     href: "/bireyselpsikoterapi",
   },
   {
     title: "Çift ve İlişki Terapisi",
-    image: "src/assets/images/ciftterapi.jpg",
+    image: ciftImg,
     alt: "Çift ve İlişki Terapisi",
     href: "/ciftterapi",
   },
   {
     title: "Duygudurum Bozuklukları",
-    image: "src/assets/images/duygudurumbozukluklari.jpg",
+    image: duygudurumImg,
     alt: "Duygudurum Bozuklukları",
     href: "/duygudurumbozukluklari",
   },
