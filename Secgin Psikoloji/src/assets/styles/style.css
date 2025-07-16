@@ -1,9 +1,10 @@
 /*Fonts*/
 @font-face {
   font-family: "Ivy Presto Display";
-  src: url('/fonts/IvyPrestoDisplay-Light.otf') format('opentype'),
-      url('/fonts/IvyPrestoDisplay-Light.woff') format('woff');
+  src: url("/fonts/IvyPrestoDisplay-Light.otf") format("opentype");
+  font-display: swap;
 }
+
 @font-face {
   font-family: "Clash Grotesk Variable";
   src: url('/fonts/ClashGrotesk-Medium.otf') format('opentype');
@@ -59,6 +60,10 @@ html, body {
   height: auto;
   min-height: 100%;
   overflow-x: hidden;
+}
+
+h1, h2, h3 {
+  font-family: "Ivy Presto Display", serif;
 }
 
 
@@ -347,8 +352,9 @@ html, body {
   }
 
   h1, h2, h3 {
-    font-family: "Ivy Presto Display", serif !important;
+  font-family: "Ivy Presto Display", serif;
   }
+
 
   img, iframe, .service-card img {
     max-width: 100%;
