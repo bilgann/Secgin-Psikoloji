@@ -4,10 +4,6 @@
   src: url('/fonts/IvyPrestoDisplay-Light.otf') format('opentype');
 }
 @font-face {
-  font-family: "Ivy Presto Display";
-  src: url('/fonts/IvyPrestoDisplay-Light(1).otf') format('opentype');
-}
-@font-face {
   font-family: "Clash Grotesk Variable";
   src: url('/fonts/ClashGrotesk-Medium.otf') format('opentype');
 }
@@ -21,7 +17,6 @@
   background-color: #D9F0FF;
   color: #162939; /* optional: change text color while selected */
 }
-
 
 
 .container {
@@ -349,6 +344,11 @@ html, body {
     font-size: 16px;            /* adjust root font for readability */
     
   }
+
+  h1, h2, h3 {
+    font-family: "Ivy Presto Display", serif !important;
+  }
+
   img, iframe, .service-card img {
     max-width: 100%;
     height: auto;
