@@ -114,14 +114,14 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
   .footer-svg-wrapper {
-    margin-top: 100px;
+    margin-top: 100px;  
     margin-right: 50px;
   }
 }
 
 @media (max-width: 1024px) {
   .footer-svg-wrapper {
-    margin-top: 10px;
+    margin-top: 100px;
     margin-right: 20px;
   }
 }
@@ -166,7 +166,7 @@ h1, h2, h3 {
 .footer-title h2 {
     background: none;
     color: #162939;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 42px;
     font-style: normal;
     font-weight: 300;
@@ -303,7 +303,7 @@ h1, h2, h3 {
 .logo-text {
     display: flex;
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display", serif;
     font-size: 36px;
     font-style: normal;
     font-weight: 300;
@@ -453,7 +453,7 @@ h1, h2, h3 {
   /* 3) Force your exact logo & button size */
   .logo-text {
     color: #3C3851;
-    font-family: "IvyPresto Display Light", serif;
+    font-family: "Ivy Presto Display", serif;
     font-size: 20px;        
     font-weight: 300;
     letter-spacing: 0.2px;
@@ -511,7 +511,7 @@ h1, h2, h3 {
     display: flex;
     align-items: center;
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 40px;
     font-style: normal;
     font-weight: 300;
@@ -568,7 +568,7 @@ h1, h2, h3 {
 
   .hero-text h1 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light", serif;
+    font-family: "Ivy Presto Display", serif;
     font-size: 60px;
     font-style: normal;
     font-weight: 300;
@@ -671,7 +671,7 @@ flex-shrink: 0;
 
 .hero-text h1 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 60px;
     font-style: normal;
     font-weight: 300;
@@ -751,7 +751,7 @@ flex-shrink: 0;
 
 .services h2{
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -862,7 +862,7 @@ flex-shrink: 0;
 
 .right-side h2 {
   color: #3C3851;
-font-family: "IvyPresto Display Light";
+font-family: "Ivy Presto Display";
 font-size: 45px;
 font-style: normal;
 font-weight: 300;
@@ -874,7 +874,7 @@ letter-spacing: -0.225px;
   color: #3C3851;
 
   /* Sub Header */
-  font-family: "IvyPresto Display Light";
+  font-family: "Ivy Presto Display";
   font-size: 48px;
   font-style: normal;
   font-weight: 300;
@@ -913,7 +913,7 @@ letter-spacing: -0.225px;
 /* Yorumlar Section */
 .reviews h2 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1063,7 +1063,7 @@ letter-spacing: -0.225px;
 
 .contact h2 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1159,7 +1159,7 @@ letter-spacing: -0.225px;
 /* About Page */
 .about-hero-text h1 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 60px;
     font-style: normal;
     font-weight: 300;
@@ -1188,7 +1188,7 @@ letter-spacing: -0.225px;
 
 .uzmanlik h2{
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1398,7 +1398,7 @@ letter-spacing: -0.225px;
 
 .iletisim h2{
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1480,7 +1480,7 @@ letter-spacing: -0.225px;
 
 .hizmetler h2 {
   color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1564,7 +1564,7 @@ letter-spacing: -0.225px;
 
 .bireyselpsikoterapi h2 {
     color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
@@ -1593,7 +1593,7 @@ letter-spacing: -0.225px;
 
 .service-text-container h3 {
   color: #3C3851;
-  font-family: "IvyPresto Display Light";
+  font-family: "Ivy Presto Display";
   font-size: 32px;
   font-style: normal;
   font-weight: 300;
@@ -1685,7 +1685,7 @@ letter-spacing: -0.225px;
 
 .gallery-section .section-header h2 {
   color: #3C3851;
-    font-family: "IvyPresto Display Light";
+    font-family: "Ivy Presto Display";
     font-size: 48px;
     font-style: normal;
     font-weight: 300;
