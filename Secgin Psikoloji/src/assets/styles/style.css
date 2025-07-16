@@ -1,7 +1,7 @@
 /*Fonts*/
 @font-face {
   font-family: "Ivy Presto Display";
-  src: url("/fonts/IvyPrestoDisplay-Light.otf") format("opentype");
+  src: url("/fonts/IvyPresto Display Light.otf") format("opentype");
   font-display: swap;
 }
 
@@ -114,12 +114,16 @@ h1, h2, h3 {
 
 @media (max-width: 768px) {
   .footer-svg-wrapper {
-    margin-top: 50px;
-    transform: translateX(50px);
+    margin-top: 100px;
+    margin-right: 50px;
   }
+}
 
-  
-  
+@media (max-width: 1024px) {
+  .footer-svg-wrapper {
+    margin-top: 10px;
+    margin-right: 20px;
+  }
 }
 
 .footer-svg-wrapper {
@@ -1647,6 +1651,8 @@ letter-spacing: -0.225px;
     width: 100%;
     min-width: auto;
   }
+
+  
 }
 
 @media (max-width: 768px) {
