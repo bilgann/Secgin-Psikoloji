@@ -1,11 +1,11 @@
 import React, { useEffect, useRef, useState } from "react";
 
-const images = [
-  "src/assets/images/IMG_2321.jpg",
-  "src/assets/images/IMG_2323.jpg",
-  "src/assets/images/IMG_6593.jpg",
-  "src/assets/images/IMG_2323.jpg"
-];
+import img1 from "../assets/images/IMG_2321.jpg";
+import img2 from "../assets/images/IMG_2323.jpg";
+import img3 from "../assets/images/IMG_6593.jpg";
+import img4 from "../assets/images/IMG_2323.jpg"; 
+
+const images = [img1, img2, img3, img4]; 
 
 export default function GallerySection() {
   const [currentIndex, setCurrentIndex] = useState(0);

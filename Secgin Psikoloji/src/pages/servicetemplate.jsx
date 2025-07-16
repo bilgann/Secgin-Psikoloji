@@ -1,11 +1,22 @@
 import React from "react";
 import { useParams } from "react-router-dom";
 
+// Import images
+import bireysel from "../assets/images/bireyselpsikoterapi.jpg";
+import cift from "../assets/images/ciftterapi.jpg";
+import duygudurum from "../assets/images/duygudurumbozukluklari.jpg";
+import bagimlilik from "../assets/images/bagimlilik.jpg";
+import cinsel from "../assets/images/cinselterapi.jpg";
+import kisilik from "../assets/images/kisilikbozukluklari.jpg";
+import yas from "../assets/images/yassureci.jpg";
+import fobiler from "../assets/images/fobiler.jpg";
+
+
 // a data object with the content of each service page
 const serviceDetails = {
     bireyselpsikoterapi: {
     title: "Bireysel Psikoterapi",
-    image: "src/assets/images/bireyselpsikoterapi.jpg",
+    image: bireysel,
     description: (
       <>
         <h3>Bireysel Psikoterapi Nedir?</h3>
@@ -62,7 +73,7 @@ const serviceDetails = {
 
     ciftterapi: {
     title: "Çift ve İlişki Terapisi",
-    image: "src/assets/images/ciftterapi.jpg",
+    image: cift,
     description: (
             <>
             <h3>Çift ve İlişki Terapisi Nedir?</h3>
@@ -101,7 +112,7 @@ const serviceDetails = {
 
     duygudurumbozukluklari: {
     title: "Duygudurum ve Anksiyete Bozuklukları",
-    image: "src/assets/images/duygudurumbozukluklari.jpg",
+    image: duygudurum,
     description: (
         <>
       <h3>Duygudurum ve Anksiyete Bozuklukları</h3>
@@ -146,7 +157,7 @@ const serviceDetails = {
 
     bagimlilik: {
         title: "Bağımlılık",
-        image: "src/assets/images/bagimlilik.jpg",
+        image: bagimlilik,
         description: (
             <>
             <h3>Bağımlılık</h3>
@@ -192,7 +203,7 @@ const serviceDetails = {
 
     cinselterapi: {
         title: "Cinsel Terapi",
-        image: "src/assets/images/cinselterapi.jpg",
+        image: cinsel,
         description: (
             <>
   <h3>Cinsel Terapi</h3>
@@ -237,7 +248,7 @@ const serviceDetails = {
 
     kisilikbozukluklari: {
         title: "Kişilik Bozuklukları",
-        image: "src/assets/images/kisilikbozukluklari.jpg",
+        image: kisilik,
         description: (
             <>
   <h3>Kişilik Bozuklukları</h3>
@@ -281,7 +292,7 @@ const serviceDetails = {
 
     yassureci: {
         title: "Yas ve Kayıp Süreçleri",
-        image: "src/assets/images/yassureci.jpg",
+        image: yas,
         description: (
             <>
   <h3>Yas ve Kayıp Süreçleri</h3>
@@ -324,7 +335,7 @@ const serviceDetails = {
 
     fobiler: {
         title: "Fobiler",
-        image: "src/assets/images/fobiler.jpg",
+        image: fobiler,
         description: (
             <>
   <h3>Fobiler</h3>

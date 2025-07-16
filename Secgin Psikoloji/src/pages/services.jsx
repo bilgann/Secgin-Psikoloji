@@ -1,56 +1,68 @@
 import React from "react";
 import { Link } from "react-router-dom";
 
+// Import images
+import bireysel from "../assets/images/bireyselpsikoterapi.jpg";
+import cift from "../assets/images/ciftterapi.jpg";
+import duygudurum from "../assets/images/duygudurumbozukluklari.jpg";
+import bagimlilik from "../assets/images/bagimlilik.jpg";
+import cinsel from "../assets/images/cinselterapi.jpg";
+import kisilik from "../assets/images/kisilikbozukluklari.jpg";
+import yas from "../assets/images/yassureci.jpg";
+import fobiler from "../assets/images/fobiler.jpg";
+
+// Define services with imported images
 const services = [
   {
     href: "/bireyselpsikoterapi",
-    imgSrc: "src/assets/images/bireyselpsikoterapi.jpg",
+    imgSrc: bireysel,
     alt: "Bireysel Psikoterapi",
     title: "Bireysel Psikoterapi",
   },
   {
     href: "/ciftterapi",
-    imgSrc: "src/assets/images/ciftterapi.jpg",
+    imgSrc: cift,
     alt: "Çift ve İlişki Terapisi",
     title: "Çift ve İlişki Terapisi",
   },
   {
     href: "/duygudurumbozukluklari",
-    imgSrc: "src/assets/images/duygudurumbozukluklari.jpg",
+    imgSrc: duygudurum,
     alt: "Duygudurum Bozuklukları",
     title: "Duygudurum Bozuklukları",
   },
   {
     href: "/bagimlilik",
-    imgSrc: "src/assets/images/bagimlilik.jpg",
+    imgSrc: bagimlilik,
     alt: "Bağımlılık Psikoterapi",
     title: "Bağımlılık",
   },
   {
     href: "/cinselterapi",
-    imgSrc: "src/assets/images/cinselterapi.jpg",
+    imgSrc: cinsel,
     alt: "Cinsel Terapi",
     title: "Cinsel Terapi",
   },
   {
     href: "/kisilikbozukluklari",
-    imgSrc: "src/assets/images/kisilikbozukluklari.jpg",
+    imgSrc: kisilik,
     alt: "Kişilik Bozuklukları",
     title: "Kişilik Bozuklukları",
   },
   {
     href: "/yassureci",
-    imgSrc: "src/assets/images/yassureci.jpg",
+    imgSrc: yas,
     alt: "Yas ve Kayıp Süreçleri",
     title: "Yas ve Kayıp Süreçleri",
   },
   {
     href: "/fobiler",
-    imgSrc: "src/assets/images/fobiler.jpg",
+    imgSrc: fobiler,
     alt: "Fobiler",
     title: "Fobiler",
   },
 ];
+
 
 export default function Services() {
   return (
