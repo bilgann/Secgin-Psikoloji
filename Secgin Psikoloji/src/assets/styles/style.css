@@ -4,6 +4,10 @@
   src: url('/fonts/IvyPrestoDisplay-Light.otf') format('opentype');
 }
 @font-face {
+  font-family: "Ivy Presto Display";
+  src: url('/fonts/IvyPrestoDisplay-Light(1).otf') format('opentype');
+}
+@font-face {
   font-family: "Clash Grotesk Variable";
   src: url('/fonts/ClashGrotesk-Medium.otf') format('opentype');
 }
@@ -731,7 +735,7 @@ flex-shrink: 0;
 
 .services {
     margin-top: 100px;
-    background-color: #f9f9f9;
+    background-color: #f8fbff;
 }
 
 .services h2{
