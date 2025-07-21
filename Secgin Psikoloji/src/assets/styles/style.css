@@ -1434,7 +1434,14 @@ letter-spacing: -0.225px;
 }
 
 .contact-page-details .contact-item {
-  margin-bottom: 25px;
+  width: 100%;
+  max-width: 400px;
+  margin: 0 auto;
+}
+
+/* Remove margin-bottom if present */
+.contact-page-details .contact-item:not(:last-child) {
+  margin-bottom: 0;
 }
 
 /* Responsive stacking on small screens */
@@ -1447,6 +1454,22 @@ letter-spacing: -0.225px;
   .contact-page-details .contact-item {
     width: 100%;
     max-width: 400px;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 601px) {
+  .contact-page-details {
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding-left: 0;
+    padding-right: 0;
+    gap: 32px;
+  }
+  .contact-page-details .contact-item {
+    width: 100%;
+    max-width: 400px;
+    margin: 0 auto 25px auto;
   }
 }
 
@@ -1736,4 +1759,63 @@ letter-spacing: -0.225px;
 
 .gallery-section {
   margin-bottom: 100px;
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .service-page .contact-box {
+    width: 340px;
+    max-width: 90%;
+    height: 406px;
+    padding: 24px 18px;
+    box-sizing: border-box;
+  }
+  .service-page .contact-content {
+    gap: 16px;
+  }
+  .service-page .contact-details-vertical {
+    gap: 12px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 769px) {
+  .service-page .contact-box {
+    width: 340px;
+    max-width: 90%;
+    height: 406px;
+    padding: 24px 18px;
+    box-sizing: border-box;
+  }
+  .service-page .contact-content {
+    gap: 16px;
+  }
+  .service-page .contact-details-vertical {
+    gap: 12px;
+  }
+  .service-page .contact-box h2,
+  .service-page .contact-box h3 {
+    font-size: 22px;
+  }
+  .service-page .contact-box p {
+    font-size: 16px;
+  }
+}
+
+@media (max-width: 1400px) and (min-width: 769px) {
+  .review-card .svg-wrapper svg {
+    width: 120px !important;
+    height: 22px !important;
+    max-width: 100%;
+    max-height: 40px;
+    display: block;
+    margin: 0 auto 8px auto;
+  }
+}
+
+@media (max-width: 1100px) and (min-width: 769px) {
+  .review-card .svg-wrapper svg {
+    width: 90px !important;
+    height: 18px !important;
+    max-width: 100%;
+    max-height: 30px;
+  }
 }
