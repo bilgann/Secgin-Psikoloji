@@ -350,6 +350,28 @@ h1, h2, h3 {
 /* only enable on mobile screens */
 @media (max-width: 768px) {
 
+  
+  .hero-text h1 {
+    color: #3C3851 !important;
+    font-family: "Ivy Presto Display", serif !important;
+    font-size: 42px !important;
+    font-style: normal !important;
+    font-weight: 300 !important;
+    line-height: normal !important;
+    letter-spacing: -0.3px !important;
+    margin: 0 !important; /* optional: removes extra top space */
+  }
+
+  .hero-text p {
+    color: #68647C !important;
+    font-family: "Clash Grotesk Variable", sans-serif !important;
+    font-size: 18px !important;
+    font-style: normal !important;
+    font-weight: 400 !important;
+    line-height: normal !important;
+    margin-top: 12px !important; /* optional: spacing under h1 */
+  }
+
   html, body {
     font-size: 16px;            /* adjust root font for readability */
     
@@ -560,32 +582,15 @@ h1, h2, h3 {
   text-decoration: none;
 }
 
+
+
+
+
 .mobile-menu a:hover{
   color: #3C3851;
   }
 
 
-
-  .hero-text h1 {
-    color: #3C3851;
-    font-family: "Ivy Presto Display", serif;
-    font-size: 60px;
-    font-style: normal;
-    font-weight: 300;
-    line-height: normal;
-    letter-spacing: -0.3px;
-    margin: 0; /* optional: removes extra top space */
-  }
-
-  .hero-text p {
-    color: #68647C;
-    font-family: "Clash Grotesk Variable", sans-serif;
-    font-size: 15.5px;
-    font-style: normal;
-    font-weight: 400;
-    line-height: normal;
-    margin-top: 12px; /* optional: spacing under h1 */
-  }
 
  
   .review-card {
@@ -632,6 +637,12 @@ flex-shrink: 0;
 
   .about-hero-text h1 {
     padding-bottom: 20px;
+  }
+
+  /* Make buttons smaller on mobile */
+  .cta-button {
+    padding: 12px 24px !important;
+    font-size: 18px !important;
   }
 
   
