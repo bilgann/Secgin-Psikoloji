@@ -25,7 +25,7 @@ export default function Footer() {
                         <div className="footer-contact-group">
                             <div className="footer-contact-title">Telefon</div>
                             <div className="footer-contact-details-phone">
-                                0 (533) 034 40 04
+                                <a href="tel:+905330344004" aria-label="Call +90 533 034 40 04">0 (533) 034 40 04</a>
                             </div>
                         </div>
                     </div>
